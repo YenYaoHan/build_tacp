@@ -136,11 +136,11 @@
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/Build.loader.js";
+        const loaderUrl = buildUrl + "/build_tacp.loader.js";
         const config = {
-            dataUrl: buildUrl + "/Build.data",
-            frameworkUrl: buildUrl + "/Build.framework.js",
-            codeUrl: buildUrl + "/Build.wasm",
+            dataUrl: buildUrl + "/build_tacp.data",
+            frameworkUrl: buildUrl + "/build_tacp.framework.js",
+            codeUrl: buildUrl + "/build_tacp.wasm",
         streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "tcap-ar",
